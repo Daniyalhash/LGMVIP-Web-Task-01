@@ -1,0 +1,192 @@
+:root {
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+    --clr-primary-5: #49a6e9;
+    --clr-primary-6: hsl(205, 89%, 70%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-8: hsl(205, 86%, 81%);
+    --clr-primary-9: hsl(205, 90%, 88%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-red-dark: hsl(360, 67%, 44%);
+    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-black: #222;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+body{
+    background-color: var(--clr-grey-1);
+    font-family: 'Poppin',sans-serif;
+}
+.grocery-main {
+    background: var(--clr-white);
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+    transition: var(--transition);
+    padding: 2rem;
+}
+.grocery-main {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 35rem;
+    margin-top: 8rem;
+}
+ 
+        form{
+            margin: 0 auto;
+            text-align: center;
+        }
+        .alert {
+        
+    margin-bottom: 1rem;
+    height: 1.25rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+    letter-spacing:2px;
+    text-transform: capitalize;
+            
+}
+.alert.active-red{
+    background-color: hsl(0, 59%, 74%);
+    color: var(--clr-red-dark);
+}
+.alert.active-green{
+    background-color: hsl(125, 51%, 72%);
+    color: var(--clr-green-dark);
+}
+       h3{
+        position: relative;
+        text-align: center;
+        font-size: 25px;
+        text-transform: capitalize;
+        letter-spacing: 4px;
+        color:  hsl(209, 61%, 16%);
+        
+       }
+       .form-control{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+       }
+       /* main body */
+       #grocery {
+        width: 85%;
+        background-color:hsl(210, 36%, 96%) ;
+        height: 20px;
+        border: none;
+        padding: 4px 17px;
+        font-size: 15px;
+        color: hsl(210, 22%, 49%);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        
+       }
+       .submit-btn{
+        width: 15%;
+        border: none;
+        background-color:hsl(205, 86%, 81%) ;
+        padding: 4px 4px 4px;
+        font-size: 15px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: pointer;
+        text-transform: capitalize;
+        transition: all 0.3s linear;
+        
+       }
+       .submit-btn:hover{
+        background-color: #49a6e9;
+        color: #fff;
+        transition: background-color 0.4 ease;   
+    }
+    /* second part */
+    .grocery-container{
+        text-align: center;
+        margin-bottom: 1rem;
+ 
+    }
+   
+    .grocery-item{
+        
+        width:95% ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 1rem;
+    margin-top: 1rem;
+    height: 20px;
+    padding: 4px 17px;
+    border-radius: 5px;
+   text-transform: capitalize;
+   letter-spacing: 2px;
+   transition: all 0.3s linear;
+   
+
+    }
+    .grocery-item:hover{
+        background-color:hsl(210, 36%, 96%)  ;
+        color:hsl(210, 22%, 49%) ;
+    }
+
+ 
+    .edit-btn{
+        color: var(--clr-green-light);
+        border: none;
+        cursor: pointer;
+    }
+ 
+    .delete-btn{
+        color: var(--clr-red-light);
+        border: none;
+        cursor: pointer;
+
+    }
+    .delete-btn:hover{
+        color: var(--clr-red-dark);
+    }
+     .delete-btn{
+        background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 0.7rem;
+    margin: 0 0.15rem;
+    transition: var(--transition);
+    }
+    @media screen and (max-width: 768px) {
+        .grocery-form {
+            width: 100%;
+        }
+        .h3{
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        .submit-btn{
+            padding: 5px 5px 5px;
+            font-size: 20px; 
+        }
+    }
